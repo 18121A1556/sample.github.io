@@ -1,0 +1,51 @@
+body
+{
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(b20.png);
+
+}
+.main
+{
+	width: 320px;
+	height: 40px;
+	padding: 20px;
+	margin:  1% 0% -5% 73%;
+	border: 1px;
+	text-align: center;
+	border-radius: 30px;
+}
+.btn
+{
+	color: #fff;
+	width: 40%;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	border:30px;
+	margin-right: 20px;
+	outline: none;
+	cursor: pointer;
+	background-color: #DC143C;
+}
+.text
+{
+	width: 670px;
+	height: 300px;
+	padding: 20px;
+	margin:  3% 0% 5% 50%;
+	border: 1px;
+	text-align: center;
+	border-radius: 30px;
+}
+h1
+{
+	font-family: Arial,"Times Nem Roman";
+	font-size: 75px;
+	font-weight: 2000;
+	text-align: right;
+	text-indent: 30px;
+	color: #DC143C;
+}
