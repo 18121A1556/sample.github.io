@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<title>Sign Up Form</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+		jQuery(function($) {
+		    var city = {
+		        'Anantapur': ['Anantapur', 'Dharmavaram','Gooty','Guntakal','Hindupur','Kadiri','Madakasira','Rayduragam','Tadipatri','Uravakonda','Kalyandurg'],
+		        'Chittoor': ['Chithoor', 'Kuppam','Chandragiri','Madanpalle','Pileru','Punganur','Puttur','Sri Kalahasthi','Tirupati'],
+		        'E.Godavari':['Allavaram','Amalapuram','Annavaram','Kadiam','kakinada','Peddapuram','Rajahmundry','Tuni'],
+		        'Guntur':['Amaravati','Bapatla','Guntur','Macherla','Mangalagiri','Narasaropet','Repalle','Tenali','Vemur'],
+		        'Kadapa':['Badvel','Jammalamadugu','Kadapa','Proddatur','Pulivendula','Rajampet','Rayachoty'],
+		        'Krishna':['Bandar','Gannavaram','Gudivada','Machilipatnam','Nuzvid','Vijayawada'],
+		        'Kurnool':['Adoni','Allur','Atmakur','Dhone','Kurnool','Nandyal','Pattikonda'],
+		        'Nellore':['Allur','Atmakur','Gudur','Kavali','Rapur','Nellore','Udayagiri'],
+		        'Prakasam':['Chirala','Drasi','Kanigiri','Kondepi','Martur','Ongole','Parchur'],
+		        'Srikakulam':['Palasa','Rajam','Sompeta','Srikakulam','Tekkali'],
+		        'Vishakapatnam':['Araku','Gajuwaka','Narsipatnam','Pendurthi','Vishakapatnam'],
+		        'Vizinagaram':['Bandagi','Bobbili','Cheppurupalli','Salur','Therlam','Vizinagaram'],
+		        'W.Godavari':['Attli','Bhimavaram','Eluru','kovvur','Penugonda','Polavaram','Tanku','Undi','Ungutur'],
+		    }
+
+		    var $city = $('#city');
+		    $('#dist').change(function () {
+		        var dist = $(this).val(), lcns = city[dist] || [];
+
+		        var html = $.map(lcns, function(lcn){
+		            return '<option value="' + lcn + '">' + lcn + '</option>'
+		        }).join('');
+		        $city.html(html)
+		    });
+		});
+	</script>
+	<script>
+            function checkPassword(form) {
+                var psw=document.getElementById("psw");
+                if (psw.value.length < 8)
+                	alert("Password should be minimum 8 charcters")
+                else if (password1 != password2) {
+                    alert ("\nPassword did not match: Please try again...")
+                    return false;
+                }
+                else{
+                    alert("Thanks For Resgistration -_-")
+                    return true;
+                }
+            }
+        </script>
+</head>
+<body>
+	<div class="sign-up">
+		<img src="b3.jpg">
+		<h1>Sign Up</h1>
+		<form onSubmit = "return checkPassword(this)">
+			<input type="text" name="name" class="input-box" placeholder="Name" required>
+			<input type="date" name="" class="input-box" required>
+			<select id="bgroup" class="dpdown" required>
+				<option value="" selected="selected">Choose Blood Group</option>
+				<option value="O+">O+</option>
+				<option value="O-">O-</option>
+				<option value="A+">A+</option>
+				<option value="A-">A-</option>
+				<option value="B+">B+</option>
+				<option value="B-">B-</option>
+				<option value="AB+">AB+</option>
+				<option value="AB-">AB-</option>
+			</select>
+			<select id="dist" name="dist" class="dropdown" required>
+		        <option value="" selected="selected">Choose District</option>
+		        <option>Anantapur</option>
+		        <option>Chittoor</option>
+		        <option>E.Godavari</option>
+		        <option>Guntur</option>
+		        <option>Kadapa</option>
+		        <option>Krishna</option>
+		        <option>Kurnool</option>
+		        <option>Nellore</option>
+		        <option>Prakasam</option>
+		        <option>Srikakulam</option>
+		        <option>Vishakapatnam</option>
+		        <option>Vizinagaram</option>
+		        <option>W.Godavari</option>
+		    </select>
+			<select id="city" name="city" class="dropdown" required>
+					<option value="" selected="selected">Choose City</option>
+			</select>
+			<input type="tel" id="phone" name="phone" class="input-box" placeholder="Mobile No." pattern= "[6-9]{1}[0-9]{9}" required>
+			<input type="password" id ="psw" name="password1" class="input-box" placeholder="Password" required>
+			<input type="password" name="password2" class="input-box" placeholder="Confirm Password" required>
+			<input type="submit" class="signup-btn" value="Register" name="Register"><br><br>
+			<label>Already have an account:</label>
+			<a href="login.html">Login</a>
+		</form>
+	</div>
+</body>
+</html>
