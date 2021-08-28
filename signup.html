@@ -33,30 +33,15 @@
 		    });
 		});
 	</script>
-	<script>
-            function checkPassword(form) {
-                var psw=document.getElementById("psw");
-                if (psw.value.length < 8)
-                	alert("Password should be minimum 8 charcters")
-                else if (password1 != password2) {
-                    alert ("\nPassword did not match: Please try again...")
-                    return false;
-                }
-                else{
-                    alert("Thanks For Resgistration -_-")
-                    return true;
-                }
-            }
-        </script>
 </head>
 <body>
 	<div class="sign-up">
 		<img src="b3.jpg">
 		<h1>Sign Up</h1>
-		<form onSubmit = "return checkPassword(this)">
-			<input type="text" name="name" class="input-box" placeholder="Name" required>
-			<input type="date" name="" class="input-box" required>
-			<select id="bgroup" class="dpdown" required>
+		<form>
+			<input type="text" name="name" class="input-box" placeholder="Name">
+			<input type="date" name="" class="input-box">
+			<select id="bgroup" class="dpdown" >
 				<option value="" selected="selected">Choose Blood Group</option>
 				<option value="O+">O+</option>
 				<option value="O-">O-</option>
@@ -67,7 +52,7 @@
 				<option value="AB+">AB+</option>
 				<option value="AB-">AB-</option>
 			</select>
-			<select id="dist" name="dist" class="dropdown" required>
+			<select id="dist" name="dist" class="dropdown" >
 		        <option value="" selected="selected">Choose District</option>
 		        <option>Anantapur</option>
 		        <option>Chittoor</option>
@@ -83,13 +68,13 @@
 		        <option>Vizinagaram</option>
 		        <option>W.Godavari</option>
 		    </select>
-			<select id="city" name="city" class="dropdown" required>
+			<select id="city" name="city" class="dropdown">
 					<option value="" selected="selected">Choose City</option>
 			</select>
-			<input type="tel" id="phone" name="phone" class="input-box" placeholder="Mobile No." pattern= "[6-9]{1}[0-9]{9}" required>
-			<input type="password" id ="psw" name="password1" class="input-box" placeholder="Password" required>
-			<input type="password" name="password2" class="input-box" placeholder="Confirm Password" required>
-			<input type="submit" class="signup-btn" value="Register" name="Register"><br><br>
+			<input type="tel" id="phone" name="phone" class="input-box" placeholder="Mobile No." pattern= "[6-9]{1}[0-9]{9}" >
+			<input type="password" id ="psw" name="password1" class="input-box" placeholder="Password" >
+			<input type="password" name="password2" class="input-box" placeholder="Confirm Password" >
+			<input type="submit" class="signup-btn" value="Register" name="Register" onclick="window.location.href='login.php'"><br><br>
 			<label>Already have an account:</label>
 			<a href="login.html">Login</a>
 		</form>
