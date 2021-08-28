@@ -1,0 +1,62 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font font-family: sans-serif;
+	background-image: url(b21.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	margin-bottom:13px;
+	text-align: center;
+}
+.login-form
+{
+	width: 300px;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,0.4);
+	background: #fff;
+	padding: 20px;
+	margin: 4%;
+	text-align: center;
+}
+.login-form h1
+{
+	color: darkorange;
+	margin-bottom: 30px;
+}
+.input-box
+{
+	border-radius: 25px;
+	padding: 10px;
+	margin: 6px 0;
+	width: 94%;
+	border: 1.5px solid #999;
+	outline:none;
+
+}
+.login-btn
+{
+	color: #fff;
+	width: 100%;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin:2px 0;
+	border:none;
+	outline: none;
+	cursor: pointer;
+	background-color: #DC143C;
+}
+.Gog-btn
+{
+	background-color: #21afde;
+}
+.or
+{
+	width: 10px;
+}
+img
+{
+	width: 50px;
+	height: 35px
+}
