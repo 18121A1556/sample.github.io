@@ -1,0 +1,81 @@
+<?php  
+				session_start();  
+				if($_SESSION['mobile'])
+				{
+				}
+				else
+				{
+					header('LOCATION:login.php');
+				}
+   
+				?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="mn.css">
+	<meta  name="viewport" content="width =device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/2254253c10.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class="banner">
+	<div class="nav-bar">
+				<img src="Search4donor1.png" class="logo">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a id="middle" href="#middle">ABOUT US</a></li>
+					<li><a id="contact" href="#bottom">CONTACT US</a></li>
+					<li><a href="logout.php">LOGOUT</a></li>
+				</ul>
+		</div>
+	
+	<div class="banner-text">
+		<h1>Donate Blood To Save Life</h1>
+		<p>There is a hope of life to someone in your blood donation.<br>
+			Opportunities knock the door sometime, so don't let it go and donate blood.</p>
+	</div>
+	<div class="banner-btn">
+		<a href="donate.php" class="hii"><span id="hi"></span>Donate Now</a>
+		<a href="details1.php" class="byee"><span id="bye"></span>Need Blood</a>
+	</div>
+</section>
+	<section id="feature">
+		<div class="title-text">
+			<a id="middle" href="#">About Us</a><br><br><br>
+		</div>
+		<div class="feature-box">
+			<div class="features">
+				<h1 style="font-weight: bold;">Search4Donor was developed on 15th June 2021 by Students of SVEC </b></h1><br>
+			<p id="para" class="text" >Search4Donor ensuring proper collection & donation, effective management and monitoring the quality and quantity of the donated blood. Considering the national roll out, e-Rakt Kosh has been developed with modular and scalable approach with configurable rule based architecture allowing customization to easily incorporate specific requirements from nationwide stakeholders.</p>
+			</div>
+			<div class="features-img">
+				<img src="b31.jpg" >
+			</div>
+		</div>
+	</section>
+	<section class="service">
+		<div class="cnt">
+			<ul>
+				<li><h1>Contact Us:</h1></li><br>
+				<li><a href="" id="bottom" style="align-content:center ;"></a></li>
+				<li><i class="far fa-envelope" >  eerladheeraj@gmail.com</i></li><br><br>
+				<li><i class="fa fa-phone" >  +919908358502</i></li>
+			</ul>
+
+		</div>
+		<div class="flw">
+			<ul>
+				<li><h1>Follow Us:</h1></li><br><br>
+				<li><a href="facebook.com"><i class="fab fa-facebook-square">  Facebook</i></a></li><br>
+
+				<li><a href="twitter.com"><i class="fab fa-instagram-square">  Instagram</i></a></li><br>
+				<li><a href="instahram.com"><i class="fab fa-twitter-square"> Twitter</i></a></li>
+			</ul>
+		</div>
+		
+	</section>
+
+</div>
+</body>
+</html6
